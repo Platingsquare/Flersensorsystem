@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/measurements.dir/src/measurement.cpp.o.d"
   "CMakeFiles/measurements.dir/src/measurement_storage.cpp.o"
   "CMakeFiles/measurements.dir/src/measurement_storage.cpp.o.d"
+  "CMakeFiles/measurements.dir/src/menu.cpp.o"
+  "CMakeFiles/measurements.dir/src/menu.cpp.o.d"
   "CMakeFiles/measurements.dir/src/sensor.cpp.o"
   "CMakeFiles/measurements.dir/src/sensor.cpp.o.d"
   "CMakeFiles/measurements.dir/src/utilities.cpp.o"

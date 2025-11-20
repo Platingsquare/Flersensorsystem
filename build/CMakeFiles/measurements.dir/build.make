@@ -86,10 +86,24 @@ CMakeFiles/measurements.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/measurements.dir/main.cpp.s"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/dan/STI-Help/Flersensorsystem/main.cpp -o CMakeFiles/measurements.dir/main.cpp.s
 
+CMakeFiles/measurements.dir/src/menu.cpp.o: CMakeFiles/measurements.dir/flags.make
+CMakeFiles/measurements.dir/src/menu.cpp.o: /var/home/dan/STI-Help/Flersensorsystem/src/menu.cpp
+CMakeFiles/measurements.dir/src/menu.cpp.o: CMakeFiles/measurements.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/measurements.dir/src/menu.cpp.o"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/measurements.dir/src/menu.cpp.o -MF CMakeFiles/measurements.dir/src/menu.cpp.o.d -o CMakeFiles/measurements.dir/src/menu.cpp.o -c /var/home/dan/STI-Help/Flersensorsystem/src/menu.cpp
+
+CMakeFiles/measurements.dir/src/menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/measurements.dir/src/menu.cpp.i"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/dan/STI-Help/Flersensorsystem/src/menu.cpp > CMakeFiles/measurements.dir/src/menu.cpp.i
+
+CMakeFiles/measurements.dir/src/menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/measurements.dir/src/menu.cpp.s"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/dan/STI-Help/Flersensorsystem/src/menu.cpp -o CMakeFiles/measurements.dir/src/menu.cpp.s
+
 CMakeFiles/measurements.dir/src/measurement_storage.cpp.o: CMakeFiles/measurements.dir/flags.make
 CMakeFiles/measurements.dir/src/measurement_storage.cpp.o: /var/home/dan/STI-Help/Flersensorsystem/src/measurement_storage.cpp
 CMakeFiles/measurements.dir/src/measurement_storage.cpp.o: CMakeFiles/measurements.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/measurements.dir/src/measurement_storage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/measurements.dir/src/measurement_storage.cpp.o"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/measurements.dir/src/measurement_storage.cpp.o -MF CMakeFiles/measurements.dir/src/measurement_storage.cpp.o.d -o CMakeFiles/measurements.dir/src/measurement_storage.cpp.o -c /var/home/dan/STI-Help/Flersensorsystem/src/measurement_storage.cpp
 
 CMakeFiles/measurements.dir/src/measurement_storage.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/measurements.dir/src/measurement_storage.cpp.s: cmake_force
 CMakeFiles/measurements.dir/src/sensor.cpp.o: CMakeFiles/measurements.dir/flags.make
 CMakeFiles/measurements.dir/src/sensor.cpp.o: /var/home/dan/STI-Help/Flersensorsystem/src/sensor.cpp
 CMakeFiles/measurements.dir/src/sensor.cpp.o: CMakeFiles/measurements.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/measurements.dir/src/sensor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/measurements.dir/src/sensor.cpp.o"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/measurements.dir/src/sensor.cpp.o -MF CMakeFiles/measurements.dir/src/sensor.cpp.o.d -o CMakeFiles/measurements.dir/src/sensor.cpp.o -c /var/home/dan/STI-Help/Flersensorsystem/src/sensor.cpp
 
 CMakeFiles/measurements.dir/src/sensor.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/measurements.dir/src/sensor.cpp.s: cmake_force
 CMakeFiles/measurements.dir/src/measurement.cpp.o: CMakeFiles/measurements.dir/flags.make
 CMakeFiles/measurements.dir/src/measurement.cpp.o: /var/home/dan/STI-Help/Flersensorsystem/src/measurement.cpp
 CMakeFiles/measurements.dir/src/measurement.cpp.o: CMakeFiles/measurements.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/measurements.dir/src/measurement.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/measurements.dir/src/measurement.cpp.o"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/measurements.dir/src/measurement.cpp.o -MF CMakeFiles/measurements.dir/src/measurement.cpp.o.d -o CMakeFiles/measurements.dir/src/measurement.cpp.o -c /var/home/dan/STI-Help/Flersensorsystem/src/measurement.cpp
 
 CMakeFiles/measurements.dir/src/measurement.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/measurements.dir/src/measurement.cpp.s: cmake_force
 CMakeFiles/measurements.dir/src/utilities.cpp.o: CMakeFiles/measurements.dir/flags.make
 CMakeFiles/measurements.dir/src/utilities.cpp.o: /var/home/dan/STI-Help/Flersensorsystem/src/utilities.cpp
 CMakeFiles/measurements.dir/src/utilities.cpp.o: CMakeFiles/measurements.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/measurements.dir/src/utilities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/measurements.dir/src/utilities.cpp.o"
 	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/measurements.dir/src/utilities.cpp.o -MF CMakeFiles/measurements.dir/src/utilities.cpp.o.d -o CMakeFiles/measurements.dir/src/utilities.cpp.o -c /var/home/dan/STI-Help/Flersensorsystem/src/utilities.cpp
 
 CMakeFiles/measurements.dir/src/utilities.cpp.i: cmake_force
@@ -145,6 +159,7 @@ CMakeFiles/measurements.dir/src/utilities.cpp.s: cmake_force
 # Object files for target measurements
 measurements_OBJECTS = \
 "CMakeFiles/measurements.dir/main.cpp.o" \
+"CMakeFiles/measurements.dir/src/menu.cpp.o" \
 "CMakeFiles/measurements.dir/src/measurement_storage.cpp.o" \
 "CMakeFiles/measurements.dir/src/sensor.cpp.o" \
 "CMakeFiles/measurements.dir/src/measurement.cpp.o" \
@@ -154,6 +169,7 @@ measurements_OBJECTS = \
 measurements_EXTERNAL_OBJECTS =
 
 measurements: CMakeFiles/measurements.dir/main.cpp.o
+measurements: CMakeFiles/measurements.dir/src/menu.cpp.o
 measurements: CMakeFiles/measurements.dir/src/measurement_storage.cpp.o
 measurements: CMakeFiles/measurements.dir/src/sensor.cpp.o
 measurements: CMakeFiles/measurements.dir/src/measurement.cpp.o
@@ -161,7 +177,7 @@ measurements: CMakeFiles/measurements.dir/src/utilities.cpp.o
 measurements: CMakeFiles/measurements.dir/build.make
 measurements: CMakeFiles/measurements.dir/compiler_depend.ts
 measurements: CMakeFiles/measurements.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable measurements"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable measurements"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/measurements.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

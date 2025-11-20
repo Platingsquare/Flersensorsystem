@@ -3,6 +3,7 @@ measurements: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/measurements.dir/main.cpp.o \
+  CMakeFiles/measurements.dir/src/menu.cpp.o \
   CMakeFiles/measurements.dir/src/measurement_storage.cpp.o \
   CMakeFiles/measurements.dir/src/sensor.cpp.o \
   CMakeFiles/measurements.dir/src/measurement.cpp.o \
@@ -42,6 +43,8 @@ measurements: \
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
 CMakeFiles/measurements.dir/main.cpp.o:
+
+CMakeFiles/measurements.dir/src/menu.cpp.o:
 
 CMakeFiles/measurements.dir/src/measurement_storage.cpp.o:
 

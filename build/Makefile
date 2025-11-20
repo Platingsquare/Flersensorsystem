@@ -201,6 +201,30 @@ src/measurement_storage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurements.dir/build.make CMakeFiles/measurements.dir/src/measurement_storage.cpp.s
 .PHONY : src/measurement_storage.cpp.s
 
+src/menu.o: src/menu.cpp.o
+.PHONY : src/menu.o
+
+# target to build an object file
+src/menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurements.dir/build.make CMakeFiles/measurements.dir/src/menu.cpp.o
+.PHONY : src/menu.cpp.o
+
+src/menu.i: src/menu.cpp.i
+.PHONY : src/menu.i
+
+# target to preprocess a source file
+src/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurements.dir/build.make CMakeFiles/measurements.dir/src/menu.cpp.i
+.PHONY : src/menu.cpp.i
+
+src/menu.s: src/menu.cpp.s
+.PHONY : src/menu.s
+
+# target to generate assembly for a file
+src/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurements.dir/build.make CMakeFiles/measurements.dir/src/menu.cpp.s
+.PHONY : src/menu.cpp.s
+
 src/sensor.o: src/sensor.cpp.o
 .PHONY : src/sensor.o
 
@@ -267,6 +291,9 @@ help:
 	@echo "... src/measurement_storage.o"
 	@echo "... src/measurement_storage.i"
 	@echo "... src/measurement_storage.s"
+	@echo "... src/menu.o"
+	@echo "... src/menu.i"
+	@echo "... src/menu.s"
 	@echo "... src/sensor.o"
 	@echo "... src/sensor.i"
 	@echo "... src/sensor.s"
