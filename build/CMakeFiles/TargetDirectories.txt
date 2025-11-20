@@ -1,0 +1,3 @@
+/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles/measurements.dir
+/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles/edit_cache.dir
+/var/home/dan/STI-Help/Flersensorsystem/build/CMakeFiles/rebuild_cache.dir
