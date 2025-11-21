@@ -16,4 +16,6 @@ add_executable(sensor-management main.cpp
 	src/measurement.cpp
 	src/utilities.h
 	src/utilities.cpp
+	src/statistics.h
+	src/statistics.cpp
 )

@@ -1,65 +1,75 @@
-#include <iostream>
-#include <vector>
-#include <limits>
 #include <ctime>
+#include <iostream>
+#include <memory>
 #include <string>
+#include <vector>
 
 #include "measurement_storage.h"
-#include "sensor.h"
 #include "menu.h"
-
+#include "sensor.h"
 
 // Lägg till filnamn för sparning/läsning
 const std::string filename = "data.csv";
 
-void showMenu() {
-    std::cout << "\n--- MENY ---\n";
-    std::cout << "1. Läs nya mätvärden från alla sensorer\n";
-    std::cout << "2. Visa statistik per sensor\n";
-    std::cout << "3. Visa alla mätvärden\n";
-    std::cout << "4. Spara alla mätvärden till fil\n";
-    std::cout << "5. Läs in mätvärden från fil\n";
-    std::cout << "6. Avsluta\n";
-    std::cout << "Val: ";
+void clear_console() { std::cout << "\033c"; }
+
+void menu::show_menu() {
+  std::cout << "\n--- MENY ---\n";
+  std::cout << "1. Läs nya mätvärden från alla sensorer\n";
+  std::cout << "2. Visa statistik per sensor\n";
+  std::cout << "3. Visa alla mätvärden\n";
+  std::cout << "4. Spara alla mätvärden till fil\n";
+  std::cout << "5. Läs in mätvärden från fil\n";
+  std::cout << "6. Avsluta\n";
+  std::cout << "Val: ";
 }
 
-void run_menu(MeasurementStorage& storage, std::vector<Sensor*>& sensors) {
-    int choice = 0;
-    do {
-        showMenu();
-        std::cin >> choice;
-        switch (choice) {
-        case 1:
-            for (auto* sensor : sensors) {
-                double value = sensor->read();
-                std::time_t now = std::time(nullptr);
-                Measurement m(sensor->name(), sensor->unit(), value, now);
-                storage.addMeasurement(m);
-                std::cout << "Läste värde från " << sensor->name() << ": " << value << " " << sensor->unit() << "\n";
-            }
-            break;
-        case 2:
-            storage.printStatisticsPerSensor();       // Nu med stddev!
-            break;
-        case 3:
-            storage.printAll();
-            break;
-        case 4:
-            storage.saveToFile(filename);
-            std::cout << "Mätvärden sparade till fil.\n";
-            break;
-        case 5:
-            storage.loadFromFile(filename);
-            std::cout << "Mätvärden inlästa från fil.\n";
-            break;
-        case 6:
-            std::cout << "Avslutar...\n";
-            break;
-        default:
-            std::cout << "Ogiltigt val.\n";
-            break;
-        }
-    } while (choice != 6);
+void menu::run_menu(MeasurementStorage &storage,
+                    std::vector<std::unique_ptr<Sensor>> &sensors) {
+  int choice = 0;
+  do {
+    menu::show_menu();
+    std::cin >> choice;
+    switch (choice) {
+    case 1:
+      clear_console();
+      for (auto &sensor : sensors) {
+        double value = sensor->read();
+        std::time_t now = std::time(nullptr);
+        Measurement m(sensor->name(), sensor->unit(), value, now);
+        storage.addMeasurement(m);
+        std::cout << "Läste värde från " << sensor->name() << ": " << value
+                  << " " << sensor->unit() << "\n";
+      }
+      break;
+    case 2:
+      clear_console();
+      storage.printStatisticsPerSensor(); // Nu med stddev!
+      break;
+    case 3:
+      clear_console();
+      storage.printAll();
+      break;
+    case 4:
+      clear_console();
+      storage.saveToFile(filename);
+      std::cout << "Mätvärden sparade till fil.\n";
+      break;
+    case 5:
+      clear_console();
+      storage.loadFromFile(filename);
+      std::cout << "Mätvärden inlästa från fil.\n";
+      break;
+    case 6:
+      clear_console();
+      std::cout << "Avslutar...\n";
+      break;
+    default:
+      clear_console();
+      std::cout << "Ogiltigt val.\n";
+      break;
+    }
+  } while (choice != 6);
 }
 
 /*/
@@ -94,5 +104,3 @@ int menu::select_menu_item(int min, int max) {
 
   return answer;
 }*/
-
-
